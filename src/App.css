@@ -1,0 +1,12 @@
+:root {
+  --main-color: rgb(230, 140, 140);
+  --second-color: rgb(233, 193, 193);
+  --third-color: rgb(141, 141, 141);
+}
+.App {
+  text-align: center;
+}
+
+.main-color {
+  background-color: var(--second-color);
+}

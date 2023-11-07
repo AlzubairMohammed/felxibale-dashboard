@@ -10,10 +10,16 @@ function App() {
   return (
     <div className="App">
       <Row className="m-0 p-0">
-        <Col md="auto" sm="auto" xs="auto">
+        <Col md="3" sm="3" xs="5">
           <SideMenu />
         </Col>
-        <Col className="main-color p-0" style={{ height: "1000px" }}>
+        <Col
+          className="main-color p-0"
+          style={{ height: "1000px" }}
+          md="9"
+          sm="9"
+          xs="7"
+        >
           <NavBar />
           <Routes>
             <Route index element={<Home />} />

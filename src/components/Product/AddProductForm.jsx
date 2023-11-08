@@ -46,7 +46,11 @@ export default function AddProductForm() {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group> */}
 
-        <Button className="" variant="primary" type="submit">
+        <Button
+          className="main-color border-0 mt-2"
+          variant="primary"
+          type="submit"
+        >
           Add product
         </Button>
       </Form>

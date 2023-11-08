@@ -1,0 +1,12 @@
+.custom-table {
+}
+.custom-table > thead > tr > th {
+  background-color: var(--main-color) !important;
+}
+.custom-table > tbody > tr > td > .btn {
+  width: 80px;
+}
+.custom-table > tbody > tr > td > .btn:first-child {
+  background-color: var(--main-color);
+  border: none !important;
+}

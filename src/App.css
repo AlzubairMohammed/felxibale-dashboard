@@ -1,6 +1,6 @@
 :root {
-  --main-color: rgb(230, 140, 140);
-  --second-color: rgb(233, 193, 193);
+  --main-color: #37bdba;
+  --second-color: #b6d5cb;
   --third-color: rgb(141, 141, 141);
 }
 .App {
@@ -8,5 +8,9 @@
 }
 
 .main-color {
-  background-color: var(--second-color);
+  background-color: var(--main-color) !important;
+}
+
+.bcolor {
+  background-color: #f8f9fe;
 }

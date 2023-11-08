@@ -6,7 +6,7 @@ import "./NavBar.css";
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary navColor">
+    <Navbar expand="lg" className="navColor">
       <Container fluid>
         <i className="fa fa-align-left"></i>
         <Navbar.Toggle aria-controls="navbarScroll" />

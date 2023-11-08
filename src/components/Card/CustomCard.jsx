@@ -5,14 +5,14 @@ import "./CustomCard.css";
 export default function CustomCard() {
   return (
     <>
-      <Card className="p-3">
-        <Row className="d-flex justify-content-center">
+      <Card className="p-3 d-grid justify-content-center align-items-center border-0">
+        <Row className="">
           <Col className="">
             <Card.Title>1800</Card.Title>
             <Card.Text>Products</Card.Text>
           </Col>
-          <Col className="">
-            <div className="rounded-circle icon-backround ">
+          <Col className="d-grid justify-content-center align-items-center">
+            <div className="rounded-circle icon-backround d-grid justify-content-center align-items-center">
               <i className="fas fa-gift icon"></i>
             </div>
           </Col>

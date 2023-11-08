@@ -1,60 +1,63 @@
 import React from "react";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
+import "./CutomTable.css";
 
 export default function CutomTable() {
   return (
     <>
-      <Table className="" striped hover size="sm">
+      <Table
+        className="custom-table"
+        striped
+        hover
+        bordered
+        responsive
+        size="lg"
+      >
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Order:No</th>
+            <th>Product name</th>
+            <th>Price</th>
             <th>Username</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Mohamed</td>
+            <td>200 $</td>
+            <td>Labtop</td>
+            <td className="">
+              <Button className="m-1">Edit</Button>
+              <Button className="m-1" variant="danger">
+                Delete
+              </Button>
+            </td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Ahmed</td>
+            <td>500 $</td>
+            <td>Mobile HP</td>
+            <td>
+              <Button className="m-1">Edit</Button>
+              <Button className="m-1" variant="danger">
+                Delete
+              </Button>
+            </td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>3</td>
+            <td>Ali</td>
+            <td>2700 $</td>
+            <td>TV screen</td>
+            <td>
+              <Button className="m-1">Edit</Button>
+              <Button className="m-1" variant="danger">
+                Delete
+              </Button>
+            </td>
           </tr>
         </tbody>
       </Table>

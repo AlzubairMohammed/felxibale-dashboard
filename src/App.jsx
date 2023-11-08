@@ -15,7 +15,7 @@ function App() {
           <SideMenu />
         </Col>
         <Col
-          className="main-color p-0"
+          className="bcolor p-0"
           style={{ height: "1000px" }}
           xl="10"
           lg="9"

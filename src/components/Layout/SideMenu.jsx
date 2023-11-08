@@ -7,7 +7,7 @@ export default function SideMenu() {
   return (
     <>
       <div className="side-menu">
-        <Tab.Container>
+        <Tab.Container className="d-grid justify-content-center align-items-center">
           <div className="logo p-3 text-center">Dashboard</div>
           <ListGroup className="" variant="flush">
             <ListGroup.Item className="border-0 fw-bold" action>

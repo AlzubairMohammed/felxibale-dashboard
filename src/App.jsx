@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Row className="m-0 p-0">
-        <Col xl="2" lg="3" md="3" sm="3" xs="3">
+        <Col xl="2" lg="3" md="3" sm="3" xs="6">
           <SideMenu />
         </Col>
         <Col
@@ -21,7 +21,7 @@ function App() {
           lg="9"
           md="9"
           sm="9"
-          xs="9"
+          xs="6"
         >
           <NavBar />
           <Routes>

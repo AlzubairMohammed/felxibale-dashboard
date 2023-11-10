@@ -2,7 +2,18 @@ import React from "react";
 import { Button, Table } from "react-bootstrap";
 import "./CutomTable.css";
 
-export default function CutomTable() {
+export default function CutomTable({
+  headData = ["Username", "Price", "Product name", "Action"],
+  bodyData = [
+    { name: "Ahmed", price: "500 $", product: "Moblie HP" },
+    { name: "Mhommed", price: "200 $", product: "laptop Mac" },
+    { name: "Mhmoud", price: "900 $", product: "TV Screen" },
+    { name: "Alzubair", price: "300 $", product: "Coffe M" },
+  ],
+  EditBtn = true,
+  DeleteBtn = true,
+  DisableBtn = false,
+}) {
   return (
     <>
       <Table
@@ -15,50 +26,38 @@ export default function CutomTable() {
       >
         <thead>
           <tr>
-            <th>Order:No</th>
-            <th>Product name</th>
-            <th>Price</th>
-            <th>Username</th>
-            <th>Action</th>
+            <th>No.</th>
+            {headData.map((item) => (
+              <th>{item}</th>
+            ))}
           </tr>
         </thead>
+
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mohamed</td>
-            <td>200 $</td>
-            <td>Labtop</td>
-            <td className="">
-              <Button className="m-1">Edit</Button>
-              <Button className="m-1" variant="danger">
-                Delete
-              </Button>
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Ahmed</td>
-            <td>500 $</td>
-            <td>Mobile HP</td>
-            <td>
-              <Button className="m-1">Edit</Button>
-              <Button className="m-1" variant="danger">
-                Delete
-              </Button>
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Ali</td>
-            <td>2700 $</td>
-            <td>TV screen</td>
-            <td>
-              <Button className="m-1">Edit</Button>
-              <Button className="m-1" variant="danger">
-                Delete
-              </Button>
-            </td>
-          </tr>
+          {bodyData.map((item, index) => {
+            return (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                {Object.keys(item, index).map((key) => (
+                  <td>{item[key]}</td>
+                ))}
+
+                <td>
+                  {EditBtn ? <Button className="m-1">Edit</Button> : null}
+                  {DisableBtn ? (
+                    <Button className="m-1" variant="success">
+                      Disable
+                    </Button>
+                  ) : null}
+                  {DeleteBtn ? (
+                    <Button className="m-1" variant="danger">
+                      Delete
+                    </Button>
+                  ) : null}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </Table>
     </>
